@@ -1,0 +1,108 @@
+.products-gallery {
+    display: grid;
+    grid-template-rows: 300px 300px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.product {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+}
+
+.product-image {
+    padding: 15% 0 0 5%;
+}
+
+.composition {
+    height: 150px;
+}
+
+.manual-content {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin-bottom: 4rem;
+}
+
+.manual-content-img {
+    display: block;
+    margin: 0 auto;
+    width: 15rem;
+    height: 80%;
+    padding-top: 15%;
+}
+
+.text-info {
+    padding: 1rem 3rem 0 1rem;
+    height: 80%;
+    overflow: hidden;
+    &:first-child{
+        padding-top: 1rem;
+    }
+}
+
+.text-info-content {
+    display: block;
+    margin-bottom: 1rem;
+    padding: 1rem 3rem 1rem 0;
+    height: 16%;
+}
+
+.first-text {
+    animation: moveInLeft 1.6s ease-out;
+}
+.secont-text {
+    animation: moveInLeft 2s ease-out;
+}
+.third-text {
+    animation: moveInLeft 2.4s ease-out;
+}
+.fourth-text {
+    animation: moveInLeft 2.8s ease-out;
+}
+.fifth-text {
+    animation: moveInLeft 3.2s ease-out;
+}
+.text-info-symbol {
+    color: $color-blue;
+    font-size: 4rem;
+    float: left;
+    margin: 0 2rem 0 1rem;
+}
+
+.steps-to-buy {
+    background-image: linear-gradient(
+        to bottom, 
+        rgba($color-white, 0.75),
+        rgba($color-blue, 0.5)), 
+        url(../img/bolts.jpg);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    height: 60rem;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 5rem;
+}
+
+.steps-header {
+    margin-left: 55%;
+    height: 6rem;
+    width: 50rem;
+    background: linear-gradient(
+    to right, 
+    rgba($color-blue, 0.1),
+    rgba($color-blue, 0.7),
+    rgba($color-blue, 0.1));
+    text-align: center; 
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: $color-white;
+}
+
+.steps-row {
+    padding: 5% 10%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 3%;
+}
